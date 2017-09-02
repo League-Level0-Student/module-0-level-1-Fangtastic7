@@ -18,9 +18,14 @@ import org.jointheleague.graphical.robot.Robot;
 	/*  Make the Robot move around the screen when the arrow keys are pressed... */
 	private void moveRobot(int keyPressed) {
 	    // 0. Print out the keyPressed variable and write down the numbers for each arrow key
-
+		
+			System.out.println(keyPressed);
+		
 	    // 1. If the up arrow is pressed, move the Robot up the screen.
-
+			if( keyPressed==38) {
+				rob.move(100);
+			}
+				
 	    // 2. If the down arrow is pressed, move the Robot down.
 
 	    // 3. If the left arrow is pressed, make the Robot go left. Hint: Make sure to end with the Robot facing UP.
@@ -51,8 +56,10 @@ import org.jointheleague.graphical.robot.Robot;
 	}
 
 	public boolean dispatchKeyEvent(KeyEvent e) {
-	    if (e.getID() == KeyEvent.KEY_PRESSED) {
+		        System.out.println("Pressed");    
+		        if (e.getID() == KeyEvent.KEY_PRESSED) {
 	        moveRobot(e.getKeyCode());
+
 	        try {
 	            checkIfR2D2Found();
 	        } catch (Exception exception) {
