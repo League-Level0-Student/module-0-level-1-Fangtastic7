@@ -27,11 +27,20 @@ import org.jointheleague.graphical.robot.Robot;
 			}
 				
 	    // 2. If the down arrow is pressed, move the Robot down.
-
+			if(keyPressed == 40) {
+			rob.turn(180);
+			rob.move(100);
+			}
 	    // 3. If the left arrow is pressed, make the Robot go left. Hint: Make sure to end with the Robot facing UP.
-	    
+			if(keyPressed == 37) {
+			rob.turn(-90);
+			rob.move(100);
+			}
 	    // 4. If right is pressed, move the Robot right.
-	    
+			if(keyPressed == 39) {
+				rob.turn(90);
+				rob.move(100);
+			}
 	    // 5. Then move the Robot to RD-2D for a surprise! 
 	}
 
@@ -65,7 +74,7 @@ import org.jointheleague.graphical.robot.Robot;
 	        } catch (Exception exception) {
 	        }
 	    }
-	    return false;
+	    return true;
 	}
 
 	public void playEureka() {
