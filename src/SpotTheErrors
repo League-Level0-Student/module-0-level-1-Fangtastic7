@@ -18,4 +18,4 @@ for (i = bottles; i < 0; i++) {
 JOptionPane.showMassageDialog(nil, "There's a lot of broken glass out here");
 
 
-What is the output from the correct code??
+//What is the output from the correct code??

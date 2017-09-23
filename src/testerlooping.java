@@ -1,7 +1,6 @@
 
-public class SpudCounter {
+public class testerlooping {
 	public static void main(String[] args) {
-
 		for(int i= 1; i < 8; i++) {
 			if (i == 1) {
 				System.out.println(i + " potato" + ",");
@@ -17,10 +16,6 @@ public class SpudCounter {
 			if(i==7) {
 				System.out.println("more!");
 			}
-		
-			}
 		}
-
 	}
-
-
+}
